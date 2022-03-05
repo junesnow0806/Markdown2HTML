@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head>        <meta charset="utf-8">        <title>Markdown</title>        <link rel="stylesheet" href="github-markdown.css">        </head><body><article class="markdown-body"><ul><li>
+<a href="#tag1">1. 第29组_需求分析报告</a>
+<ul>
+<li>
+<a href="#tag2">1.1. 一、项目背景</a>
+</li>
+<li>
+<a href="#tag3">1.2. 二、任务概述和需求分析</a>
+<ul>
+<li>
+<a href="#tag4">1.2.1. 2.1 目标功能描述</a>
+</li>
+<li>
+<a href="#tag5">1.2.2. 2.2 功能需求分析</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="tag1">第29组<em>需求分析报告</em></h1><p><strong>*</strong></p><p>小组成员：</p><p>吴承泽	PB19051183</p><p>刘伟	    PB19051195</p><p>梁峻滔	PB19051175</p><p><strong>*</strong></p><h2 id="tag2">一、项目背景</h2><p>​		静态网页的需求是普遍的，但是静态网页的编写需要使用 HTML 语言，而直接编写 HTML 语言有一定麻烦。Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，其语法精简易学。因此，如果可以将 Markdown 文档转换成有效的 HTML 文档，将极大方便人们编辑静态网页。本项目旨在实现一个可以基本功能为将 Markdown 文档转换成 HTML 文档的软件，并使该软件具有更加完善的功能，如报错、预览、自动上传等。</p><h2 id="tag3">二、任务概述和需求分析</h2><h3 id="tag4">2.1 目标功能描述</h3><p>拟实现的软件可以具有以下功能：</p><ol><li> GFM 规范中的 <code>Text</code> 、<code>Headers</code> 、<code>Lists</code> 、<code>Images</code> 、<code>Links</code> 五项基本内容；</li><li> GFM 规范中的其他标记：<code>Emphasis</code> 、<code>Code Blocks</code> 、<code>Blockquotes</code>；</li><li> 报错：转换失败时显示错误信息；</li><li> 预览：编辑完 Markdown 文档后可以预览其转换成 HTML 文档后的显示效果；</li><li> 自动上传：支持在本软件上保存 HTML 文档后自动直接上传到 ftp 的 <code>home.ustc.edu.cn</code>，即实现个人主页的编辑保存后自动更新。</li></ol><h3 id="tag5">2.2 功能需求分析</h3><ol><li> GFM 规范中的<code>Text</code>、<code>Headers</code>、<code>Lists</code>、<code>Images</code>、<code>Links</code>分别对应文本、标题、列表、图片和链接，基本所有网页有含有这些内容，必然需要实现。</li><li> 增加实现 GFM 规范中的<code>Emphasisi</code>、<code>Blockquotes</code>，可以丰富文本的表现方式，也是人们在文档中普遍使用的；实现<code>Code Blocks</code>则是为程序员在网页中展示代码提供方便。</li><li> 在实际使用中从 Markdown 文档到 HTML 文档的转换可能会因语法错误等而不能有效转换，这时如果可以显示错误信息和错误的位置，则可以为用户检查、修正错误提供很大的便利。</li><li> 预览功能可以让用户直接在软件上就可以看到转换后的效果，以决定是否需要修改和完善，而不必每次都导出 html 文件放到浏览器查看后才能看到效果，也是一项实用、常用的功能。</li><li> 用户编写好 html 文件后，需要通过 FileZilla 连接到<code>home.ustc.edu.cn</code>，并将 html 文件放到对应的目录下后才能实现网页的更新，这样的“手续”如果每次更新主页都要操作一遍的话会很麻烦(试想用户发现自己刚更新的网页上有一个错别字而该用户又有强迫症时)。我们希望用户能在我们的软件上第一次设置好 ftp 连接到<code>home.ustc.edu.cn</code>后，以后每次修改 html 文件并保存后就自动上传，这样就能实现个人主页的自动更新，避免过于繁琐的“手续”。</li></ol></article></body></html>
